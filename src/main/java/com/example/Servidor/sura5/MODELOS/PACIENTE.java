@@ -8,25 +8,25 @@ import java.time.LocalDate;
 public class PACIENTE {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id;
+    private long id;// 35 caracteres y solo letras
 
     private String nombres;
 
-    private LocalDate fechaNacimiento;
+    private LocalDate fechaNacimiento; //maximo 1900
 
-    private String ciudad;
+    private String ciudad; // 40 caracteres y solo letras
 
-    private String correo;
+    private String correo; // correo valido @sura.com.co
 
-    private String telefono;
+    private String telefono; // maximo 12 caracteres y solo numero
 
-    private String ips;
+    private String ips; // maximo 50 caracteres
 
-    private String grupoIngreso;
+    private String grupoIngreso; // solo se admite A B o C en mayuscula
 
     private Boolean tienePoliza;
 
-    private LocalDate fechaAfiliacion;
+    private LocalDate fechaAfiliacion; // no puede ser menor a 2016
 
     public PACIENTE() {
     }
